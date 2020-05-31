@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "phpmyadmin1", "internetoflaundry", "mqtt_data");
+$mysqli = new mysqli("localhost", <MySQL_User>, <MySQL_Password>, "mqtt_data");
 if($mysqli->connect_error) {
   exit('Could not connect');
 }
