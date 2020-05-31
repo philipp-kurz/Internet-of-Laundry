@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "phpmyadmin1";
-$password = "internetoflaundry";
+$username = <MySQL_User>;
+$password = <MySQL_Password>;
 $dbname = "mqtt_data";
 
 // Create connection
