@@ -13,7 +13,7 @@ def checkForUpdates():
     scheduler.enter(10, 1, checkForUpdates, ())
     
     # Connect to database
-    conn = MySQLdb.connect("localhost", "phpmyadmin1", "internetoflaundry", "mqtt_data")
+    conn = MySQLdb.connect("localhost", <MySQL_User>, <MySQL_Password>, "mqtt_data")
     conn.begin()
     
     # Check for new entries
