@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AJAX test page</title>
+  </head>
+  <body>
+    <div id="testdiv">TEST</div>
+    <br>
+    <img id="machine" src="empty.png" style="width:300px;">
+  </body>
+
+  
+<script>
+<!-- setInterval ("myFunction()", 1000 ); -->
+setTimeout("function1()",3000);
+setTimeout("function2()",6000);
+function myFunction() {
+  var xhttp; 
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("testdiv").innerHTML = this.responseText;
+      if (parseInt(this.responseText) > 1000) {
+        document.getElementById("machine").src = "running.gif";
+      } else {
+        document.getElementById("machine").src = "empty.png";
+      }
+    }
+  };
+  xhttp.open("GET", "getresult.php", true);
+  xhttp.send();
+}
+
+function function1() {
+  document.getElementById("machine").src = "running.gif";
+}
+function function1() {
+  document.getElementById("machine").src = "emptying.gif";
+}
+
+</script>
+</html>

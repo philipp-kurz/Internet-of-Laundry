@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Internet of Laundry</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+  
+  
+  <link rel="icon" type="image/png" href="favicon.png" />
+  
+  
+	</head>
+	<body>
+  
+		
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div id="colorlib-logo"><a href="index.html">Internet Of Laundry</a></div>
+						</div>
+						<div class="col-md-8 text-right menu-1">
+							<ul>
+                <li class="active"><a href="index.html">Home</a></li>
+								<li class="has-dropdown">
+									<a href="">Administration</a>
+									<ul class="dropdown">
+										<li><a href="https://us-west-2.console.aws.amazon.com/console/home" target="_blank">AWS Console</a></li>
+										<li><a href="phpmyadmin" target="_blank">phpmyadmin</a></li>
+									</ul>
+								</li>
+								<li class="has-dropdown">
+									<a href="">Showcase</a>
+									<ul class="dropdown">
+										<li><a href="unapp_backup/index.html" target="_blank">Template</a></li>
+										<li><a href="getresult.php" target="_blank">AJAX Query</a></li>
+									</ul>
+								</li>
+								<!-- <li><a href="">Services</a></li> -->
+								<!-- <li><a href="">Blog</a></li> -->
+								<!-- <li><a href="">About</a></li> -->
+								<!-- <li><a href="">Shop</a></li> -->
+								<!-- <li><a href="">Contact</a></li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section id="home" class="video-hero" style= "background-size:auto; background-position: center center;background-attachment:fixed;" data-section="home">
+		<div class="overlay"></div>
+      <div class="display-t text-center">
+				<div class="display-tc">
+					<div class="container" id="main_container" >
+						<div class="col-md-12 col-md-offset-0">
+              <div class="animate-box">
+              
+                <div class="main_panel" id="not_popup" >
+                  Please notify me when <a id="ph_machine"></a> is done!
+                  <form>
+                    Name:<br>
+                    <input type="text" name="name"><br><br>
+                    Email Address:<br>
+                    <input type="text" name="email">
+                      <a class="btn btn-primary btn-outline with-arrow" id="not_submit_btn" onclick="submitForm()">Notify me!<i class="icon-arrow-right3"></i></a>
+                    </form>
+                    
+                </div>
+                <div class="main_panel" id="main">
+                  <div class="row">
+                    <div class="col-md-3 col-md-offset-0">
+                      <div class="machine" id="machine_1">
+                        <div class="circ">1</div><img src="own_images/empty.png">
+                        <div class="not_icon" onclick="showPopup(1)">
+                          <img src="own_images/notification_no_circle.png">
+                        </div>
+                      </div>
+                    </div>                    
+                    <div class="col-md-3 col-md-offset-0">
+                      <div class="machine" class="pulse" id="own_machine">
+                        <div class="circ">2</div><img src="own_images/empty.png">
+                        <div class="not_icon" onclick="showPopup(2)">
+                          <img src="own_images/notification_no_circle.png">
+                        </div>
+                        <div id="current"></div>
+                        <div id="duration"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-0">
+                      <div class="machine" id="machine_3">
+                        <div class="circ">3</div><img src="own_images/empty.png">
+                        <div class="not_icon" onclick="showPopup(3)">
+                          <img src="own_images/notification_no_circle.png">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-0">
+                      <div class="machine" id="machine_4">
+                        <div class="circ">4</div><img src="own_images/empty.png">
+                        <div class="not_icon" onclick="showPopup(4)">
+                          <img src="own_images/notification_no_circle.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="spacer"></div>
+							</div>
+						</div>
+					</div>
+          
+          
+                <footer id="colorlib-footer">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            UC Berkeley - ME100 - Electronics for the Internet of Things<br>Team Harald Bluetooth - Jack Wallis & Philipp Kurz<br>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved - Based on a template by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </div>
+        </div>
+        
+        
+      </footer>
+      
+				</div>
+			</div>
+		
+    
+
+    </section>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+  
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- YTPlayer -->
+	<script src="js/jquery.mb.YTPlayer.min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+  
+  <!-- Own JS code -->
+  <script src="IOL.js"></script>
+  
+
+	</body>
+</html>
+
