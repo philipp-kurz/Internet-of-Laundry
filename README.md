@@ -1,4 +1,4 @@
-# Internet_of_Laundry
+# Internet of Laundry
 IoL is a smart plug for communal laundry machines. It detects current flow and updates a website with machine status. Created as a final project for the class ME100 - "Electronics for the Internet of Things" at UC Berkeley during the Fall 2019 semester.
 
 As microcontroller we used an **ESP32** programmed with **MicroPython**. The backend was built using the **LAMP stack** using an **AWS EC2** container. The backend APIs were built with **Python** and AWS's **boto3** library. Communication with the backend was done through **MQTT**. The basic **CSS** of the ffrontend came from a website template. The actual frontend was coded in vanilla **HTML**, **CSS** and **JavaScript**. The communication between frontend and backend happend through **PHP** scripts that were called through **AJAX** directly from the frontend. 
