@@ -3,7 +3,7 @@ IoL is a smart plug for communal laundry machines. It detects current flow and u
 
 [Project details as PDF](https://github.com/philipp-kurz/CS170_NP_Comp_Approx/files/4707497/IOL_Details.pdf)
 
-![Front_small](https://user-images.githubusercontent.com/54779918/83349979-ff016900-a338-11ea-9969-46db600b7f37.jpg)
+![Front_small](https://user-images.githubusercontent.com/54779918/83350027-5bfd1f00-a339-11ea-8587-1e2c7b9a6f94.jpg)
 
 ![Hardware_smaller](https://user-images.githubusercontent.com/54779918/83349996-29532680-a339-11ea-843f-45ecf0f98d4e.png)
 
