@@ -30,7 +30,8 @@ for _ in range(2):
 wlan = WLAN(STA_IF)
 wlan.active(True)
 
-wlan.connect("Philipp", "Philipp123", 5000)
+
+wlan.connect(<WIFI_SSID>, <WIFI_PASSWORD>, 5000)
 
 while not wlan.isconnected():
     if wlan.isconnected():
