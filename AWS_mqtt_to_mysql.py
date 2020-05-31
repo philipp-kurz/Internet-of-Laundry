@@ -5,8 +5,8 @@ import re
 
 mydb = mysql.connector.connect(
   host="localhost",
-  user="phpmyadmin1",
-  passwd="internetoflaundry",
+  user=<MySQL_User>,
+  passwd=<MySQL_Password>,
   database="mqtt_data"
 )
 
