@@ -11,6 +11,14 @@ Product view of final version of project
 
 ---
 
+Hardware components and project interior
+
 ![Hardware_smaller](https://user-images.githubusercontent.com/54779918/83349996-29532680-a339-11ea-843f-45ecf0f98d4e.png)
 
+---
+
+GIF of final website
+
 ![website](https://user-images.githubusercontent.com/54779918/83349896-6834ac80-a338-11ea-800f-305c7be9466d.gif)
+
+Website can be found in website folder (most of code directly in index.html and IOL.js, as well as PHP scripts that were called using AJAX)
